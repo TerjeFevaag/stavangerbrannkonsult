@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { Phone, Mail } from 'lucide-react'
 
 function FacebookIcon() {
   return <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
@@ -13,13 +14,15 @@ function LinkedinIcon() {
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-dark text-brand-white pt-16 pb-8">
+    <footer className="bg-brand-dark text-brand-white pt-16 pb-0">
       <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-0">
           {/* Col 1 */}
           <div>
-            <Image src="/images/logo-white.png" alt="Stavanger Brannkonsult" width={234} height={72} className="object-contain mb-4" />
-            <p className="text-brand-white/60 text-sm leading-relaxed mb-5">Brannprosjektering i Stavanger og Rogaland. Sentralt godkjent foretak.</p>
+            <Image src="/images/logo-white.png" alt="Stavanger Brannkonsult" width={234} height={72} className="object-contain mb-5" />
+            <p className="text-brand-white/60 text-sm leading-relaxed mb-5">
+              Brannprosjektering i Stavanger og Rogaland. Sentralt godkjent foretak for tiltaksklasse 1 og 2.
+            </p>
             <div className="flex gap-4">
               <a href="#" aria-label="Facebook" className="text-brand-white/60 hover:text-brand-orange transition-colors"><FacebookIcon /></a>
               <a href="#" aria-label="Instagram" className="text-brand-white/60 hover:text-brand-orange transition-colors"><InstagramIcon /></a>
@@ -28,8 +31,8 @@ export default function Footer() {
           </div>
           {/* Col 2 */}
           <div>
-            <h3 className="font-bold text-brand-white mb-4">Snarveier</h3>
-            <ul className="space-y-2">
+            <h3 className="font-black text-brand-white mb-5 text-base">Snarveier</h3>
+            <ul className="space-y-3">
               {[['/', 'Hjem'], ['/om-oss', 'Om oss'], ['/artikler/pipebrann', 'Artikler'], ['/kontakt-oss', 'Kontakt oss']].map(([href, label]) => (
                 <li key={href}><Link href={href} className="text-brand-white/60 hover:text-brand-orange transition-colors text-sm">{label}</Link></li>
               ))}
@@ -37,15 +40,32 @@ export default function Footer() {
           </div>
           {/* Col 3 */}
           <div>
-            <h3 className="font-bold text-brand-white mb-4">Tjenester</h3>
-            <ul className="space-y-2">
+            <h3 className="font-black text-brand-white mb-5 text-base">Tjenester</h3>
+            <ul className="space-y-3">
               {[['/brannkonsept', 'Brannkonsept'], ['/brannprosjektering', 'Brannprosjektering'], ['/branntilsyn', 'Branntilsyn'], ['/uavhengig-kontroll', 'Uavhengig kontroll']].map(([href, label]) => (
                 <li key={href}><Link href={href} className="text-brand-white/60 hover:text-brand-orange transition-colors text-sm">{label}</Link></li>
               ))}
             </ul>
           </div>
         </div>
-        <div className="border-t border-brand-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+
+        {/* Contact strip */}
+        <div className="mt-12 border-t border-brand-orange/20 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col sm:flex-row gap-5 text-sm text-brand-white/70">
+            <a href="tel:+4700000000" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
+              <Phone size={14} /> +47 000 00 000
+            </a>
+            <a href="mailto:post@stavangerbrannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
+              <Mail size={14} /> post@stavangerbrannkonsult.no
+            </a>
+          </div>
+          <Link href="/kontakt-oss" className="shrink-0 bg-brand-orange text-brand-white font-bold px-7 py-2.5 rounded-[10px] text-sm hover:opacity-90 transition-opacity">
+            Fa gratis tilbud
+          </Link>
+        </div>
+
+        {/* Copyright */}
+        <div className="border-t border-brand-white/10 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-brand-white/40 text-xs">&copy; {new Date().getFullYear()} Stavanger Brannkonsult AS. Alle rettigheter forbeholdt.</p>
           <Image src="/images/sentralt-godkjent.png" alt="Sentralt godkjent" width={80} height={80} className="object-contain" />
         </div>

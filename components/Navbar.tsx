@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Phone } from 'lucide-react'
 
 const navLinks = [
   { href: '/brannkonsept', label: 'Brannkonsept' },
@@ -11,7 +11,6 @@ const navLinks = [
   { href: '/branntilsyn', label: 'Branntilsyn' },
   { href: '/uavhengig-kontroll', label: 'Uavhengig kontroll' },
   { href: '/om-oss', label: 'Om oss' },
-  { href: '/kontakt-oss', label: 'Kontakt oss' },
 ]
 
 export default function Navbar() {
@@ -36,25 +35,28 @@ export default function Navbar() {
             priority
           />
         </Link>
-
-        <nav className="hidden lg:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-5">
           {navLinks.map(link => (
             <Link key={link.href} href={link.href}
               className={`text-sm font-bold transition-colors hover:text-brand-orange ${scrolled ? 'text-brand-black' : 'text-brand-white'}`}>
               {link.label}
             </Link>
           ))}
+          <div className={`h-4 w-px mx-1 ${scrolled ? 'bg-brand-gray' : 'bg-brand-white/20'}`} />
+          <a href="tel:+4700000000"
+            className={`flex items-center gap-1.5 text-sm font-bold transition-colors hover:text-brand-orange ${scrolled ? 'text-brand-black' : 'text-brand-white/80'}`}>
+            <Phone size={13} />
+            +47 000 00 000
+          </a>
           <Link href="/kontakt-oss"
-            className="ml-2 bg-brand-orange text-brand-white font-bold px-5 py-2.5 rounded-[10px] hover:opacity-90 transition-opacity text-sm">
-            Få tilbud
+            className="ml-1 bg-brand-orange text-brand-white font-bold px-5 py-2.5 rounded-[10px] hover:opacity-90 transition-opacity text-sm">
+            Fa tilbud
           </Link>
         </nav>
-
         <button onClick={() => setOpen(!open)} className={`lg:hidden p-2 ${scrolled ? 'text-brand-black' : 'text-brand-white'}`} aria-label="Meny">
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
-
       {open && (
         <div className="lg:hidden bg-brand-dark border-t border-brand-white/10 px-4 py-4">
           {navLinks.map(link => (
@@ -63,6 +65,15 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          <div className="pt-4 pb-1 flex flex-col gap-3">
+            <a href="tel:+4700000000" className="flex items-center gap-2 text-brand-white/70 text-sm font-bold">
+              <Phone size={13} /> +47 000 00 000
+            </a>
+            <Link href="/kontakt-oss" onClick={() => setOpen(false)}
+              className="block bg-brand-orange text-brand-white font-bold px-5 py-3 rounded-[10px] text-center hover:opacity-90">
+              Fa tilbud
+            </Link>
+          </div>
         </div>
       )}
     </header>
