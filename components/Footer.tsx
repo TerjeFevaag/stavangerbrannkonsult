@@ -42,7 +42,7 @@ export default function Footer() {
           <div>
             <h3 className="font-black text-brand-white mb-5 text-base">Tjenester</h3>
             <ul className="space-y-3">
-              {[['/brannkonsept', 'Brannkonsept'], ['/brannprosjektering', 'Brannprosjektering'], ['/branntilsyn', 'Branntilsyn'], ['/uavhengig-kontroll', 'Uavhengig kontroll']].map(([href, label]) => (
+              {[['/brannkonsept', 'Brannkonsept'], ['/brannprosjektering', 'Brannprosjektering'], ['/branninspeksjon', 'Branninspeksjon'], ['/uavhengig-kontroll', 'Uavhengig kontroll']].map(([href, label]) => (
                 <li key={href}><Link href={href} className="text-brand-white/60 hover:text-brand-orange transition-colors text-sm">{label}</Link></li>
               ))}
             </ul>

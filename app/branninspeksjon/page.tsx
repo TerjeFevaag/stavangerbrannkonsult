@@ -4,9 +4,9 @@ import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
 
 export const metadata: Metadata = {
-  title: 'Branntilsyn Stavanger | Stavanger Brannkonsult',
+  title: 'Branninspeksjon Stavanger | Stavanger Brannkonsult',
   description: 'Hjelp etter branntilsyn i Stavanger og Rogaland. Tilstandsrapport og handlingsplan. Sentralt godkjent foretak.',
-  alternates: { canonical: 'https://www.stavangerbrannkonsult.no/branntilsyn' },
+  alternates: { canonical: 'https://www.stavangerbrannkonsult.no/branninspeksjon' },
 }
 
 const faqItems = [
@@ -32,7 +32,7 @@ const faqItems = [
   },
 ]
 
-export default function BranntilsynPage() {
+export default function BranninspeksjonPage() {
   return (
     <>
       <section className="py-20 lg:py-28 bg-brand-white border-b border-brand-gray">
