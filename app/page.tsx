@@ -69,23 +69,23 @@ const reviews = [
 const faqItems = [
   {
     question: 'Hva koster brannprosjektering i Stavanger?',
-    answer: 'Prisen varierer etter omfang og kompleksitet. Et brannkonsept i tiltaksklasse 2 starter hos oss fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris.',
+    answer: 'Prisen varierer etter omfang og kompleksitet. Et brannkonsept i tiltaksklasse 2 starter hos oss fra ca. 15 000 kr ekskl. mva., inkludert branntegninger. Vi tilbyr alltid fastpris — uansett om prosjektet er i Stavanger, Rogaland eller andre steder i landet.',
   },
   {
     question: 'Trenger jeg brannprosjektering for mitt prosjekt?',
-    answer: 'De fleste byggesaker krever brannprosjektering — tilbygg, bruksendring, ny boenhet, påbygg. Ta kontakt for en gratis vurdering av ditt prosjekt.',
+    answer: 'De fleste byggesaker krever brannprosjektering — tilbygg, bruksendring, ny boenhet, påbygg. Ta kontakt for en gratis vurdering av ditt prosjekt, uansett hvor i Norge det befinner seg.',
   },
   {
     question: 'Er befaring nødvendig?',
-    answer: 'For nybygg og enklere saker er det ofte ikke nødvendig. Takket være digitale verktøy og kartdata kan vi i mange tilfeller jobbe uten fysisk befaring.',
+    answer: 'For nybygg og enklere saker er det ofte ikke nødvendig. Takket være digitale verktøy og kartdata jobber vi effektivt uten fysisk befaring — noe som gjør det enkelt å samarbeide med oss uansett om du er i Stavanger, på Vestlandet eller andre steder i landet.',
   },
   {
     question: 'Er dere sentralt godkjent?',
-    answer: 'Ja, vi har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2. Dette er en garanti for at vi er seriøse, godt forsikret og har dokumenterte referanseprosjekter.',
+    answer: 'Ja, vi har sentral godkjenning for brannprosjektering i tiltaksklasse 1 og 2. Dette er en garanti for at vi er seriøse, godt forsikret og har dokumenterte referanseprosjekter — og godkjenningen gjelder i hele Norge.',
   },
   {
-    question: 'Tar dere oppdrag utenfor Stavanger?',
-    answer: 'Vi hjelper kunder i Stavanger, Rogaland og over hele landet. Kontakt oss uansett hvor i Norge prosjektet ditt er.',
+    question: 'Leverer dere kun i Stavanger?',
+    answer: 'Nei — Stavanger og Rogaland er kjerneområdet vårt, men vi bistår kunder over hele Vestlandet og resten av landet. Vi har gjennomført prosjekter fra Kristiansand til Tromsø. Kontakt oss uansett hvor prosjektet ditt er.',
   },
 ]
 
