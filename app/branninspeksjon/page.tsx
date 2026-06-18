@@ -1,7 +1,28 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.stavangerbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Branninspeksjon', item: 'https://www.stavangerbrannkonsult.no/branninspeksjon' },
+  ],
+}
+
+const serviceLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Branninspeksjon',
+  description: 'Branninspeksjon og tilstandsrapport for bygg i Stavanger og Rogaland. Hjelp etter pålegg fra brannvesenet.',
+  url: 'https://www.stavangerbrannkonsult.no/branninspeksjon',
+  provider: { '@type': 'LocalBusiness', name: 'Stavanger Brannkonsult AS', url: 'https://www.stavangerbrannkonsult.no' },
+  areaServed: ['Stavanger', 'Sandnes', 'Sola', 'Randaberg', 'Rogaland'],
+  // TODO: Legg til offers.price når fastpris for branninspeksjon er bestemt
+}
 
 export const metadata: Metadata = {
   title: 'Branninspeksjon Stavanger | Stavanger Brannkonsult',
@@ -35,11 +56,13 @@ const faqItems = [
 export default function BranninspeksjonPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />
       <section className="py-20 lg:py-28 bg-brand-white border-b border-brand-gray">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="border-l-4 border-brand-orange pl-8">
             <p className="text-brand-orange font-bold text-sm uppercase tracking-widest mb-3">Tjenester</p>
-            <h1 className="text-brand-black font-black text-4xl lg:text-6xl leading-tight mb-5">Branntilsyn og branninspeksjon</h1>
+            <h1 className="text-brand-black font-black text-4xl lg:text-6xl leading-tight mb-5">Branninspeksjon i Stavanger</h1>
             <p className="text-brand-darkgray text-lg lg:text-xl max-w-2xl leading-relaxed">
               Har du fått pålegg etter branntilsyn? Vi inspiserer bygget og utarbeider tilstandsrapport og handlingsplan.
             </p>
@@ -82,6 +105,13 @@ export default function BranninspeksjonPage() {
               </ScrollReveal>
 
               <ScrollReveal>
+                <h2 className="text-brand-black text-2xl font-black mb-4">Område vi betjener</h2>
+                <p className="text-brand-darkgray leading-relaxed">
+                  Vi utfører branninspeksjon i Stavanger, Sandnes, Sola, Randaberg og resten av Rogaland. Ta kontakt uansett hvor i regionen bygget befinner seg.
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-5">Vanlige spørsmål</h2>
                 <div className="bg-brand-white rounded-[20px] p-6 border border-brand-gray">
                   <FAQAccordion items={faqItems} />
@@ -90,13 +120,19 @@ export default function BranninspeksjonPage() {
             </div>
 
             <div className="lg:col-span-1">
-              <ScrollReveal delay={100} className="sticky top-28">
+              <ScrollReveal delay={100} className="sticky top-28 space-y-6">
                 <div className="bg-brand-dark rounded-[30px] p-8 text-brand-white">
                   <h3 className="font-black text-xl mb-4">Hjelp etter tilsyn</h3>
-                  <p className="text-brand-white/60 text-sm leading-relaxed mb-6">Vi hjelper deg med å følge opp pålegg og utarbeide handlingsplan.</p>
+                  <p className="text-brand-white/60 text-sm leading-relaxed mb-3">Vi hjelper deg med å følge opp pålegg og utarbeide handlingsplan.</p>
+                  {/* TODO: Legg til fra-pris for branninspeksjon når dette er bestemt */}
+                  <p className="text-brand-orange text-sm font-bold mb-6">Fastpris — kontakt oss for tilbud</p>
                   <Link href="/kontakt-oss" className="block w-full bg-brand-orange text-brand-white font-bold px-6 py-3 rounded-[10px] hover:opacity-90 transition-opacity text-center">
                     Kontakt oss
                   </Link>
+                </div>
+                <div className="bg-brand-white rounded-[30px] p-6 border border-brand-gray flex flex-col items-center text-center">
+                  <Image src="/images/sentralt-godkjent.png" alt="Sentralt godkjent DiBK tiltaksklasse 1 og 2" width={80} height={80} className="object-contain mb-3" />
+                  <p className="text-brand-darkgray text-xs leading-relaxed">Sentralt godkjent foretak for brannprosjektering i tiltaksklasse 1 og 2</p>
                 </div>
               </ScrollReveal>
             </div>
@@ -106,7 +142,7 @@ export default function BranninspeksjonPage() {
 
       <section className="bg-brand-orange py-10">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-brand-white font-bold text-lg">Kontakt oss etter branntilsyn i Stavanger</p>
+          <p className="text-brand-white font-bold text-lg">Kontakt oss for branninspeksjon i Stavanger</p>
           <Link href="/kontakt-oss" className="border-2 border-brand-white text-brand-white font-bold px-8 py-3 rounded-[10px] hover:bg-brand-white hover:text-brand-orange transition-all whitespace-nowrap">
             Kontakt oss
           </Link>

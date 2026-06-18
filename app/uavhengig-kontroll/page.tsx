@@ -1,8 +1,29 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.stavangerbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Uavhengig kontroll', item: 'https://www.stavangerbrannkonsult.no/uavhengig-kontroll' },
+  ],
+}
+
+const serviceLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Uavhengig kontroll brann',
+  description: 'Uavhengig kontroll av brannkonsept i tiltaksklasse 2 og høyere. Stavanger og Rogaland. Sentralt godkjent foretak.',
+  url: 'https://www.stavangerbrannkonsult.no/uavhengig-kontroll',
+  provider: { '@type': 'LocalBusiness', name: 'Stavanger Brannkonsult AS', url: 'https://www.stavangerbrannkonsult.no' },
+  areaServed: ['Stavanger', 'Sandnes', 'Sola', 'Randaberg', 'Rogaland'],
+  // TODO: Legg til offers.price når fra-pris for uavhengig kontroll er bestemt
+}
 
 export const metadata: Metadata = {
   title: 'Uavhengig kontroll brann Stavanger | Stavanger Brannkonsult',
@@ -32,6 +53,8 @@ const faqItems = [
 export default function UavhengigKontrollPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />
       <section className="py-20 lg:py-28 bg-brand-white border-b border-brand-gray">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="border-l-4 border-brand-orange pl-8">
@@ -88,13 +111,19 @@ export default function UavhengigKontrollPage() {
             </div>
 
             <div className="lg:col-span-1">
-              <ScrollReveal delay={100} className="sticky top-28">
+              <ScrollReveal delay={100} className="sticky top-28 space-y-6">
                 <div className="bg-brand-dark rounded-[30px] p-8 text-brand-white">
                   <h3 className="font-black text-xl mb-4">Trenger du UK brann?</h3>
-                  <p className="text-brand-white/60 text-sm leading-relaxed mb-6">Kontakt oss for et uforpliktende tilbud. Vi svarer innen 24 timer.</p>
+                  <p className="text-brand-white/60 text-sm leading-relaxed mb-3">Kontakt oss for et uforpliktende tilbud. Vi svarer innen 24 timer.</p>
+                  {/* TODO: Legg til fra-pris for uavhengig kontroll når dette er bestemt */}
+                  <p className="text-brand-orange text-sm font-bold mb-6">Fastpris — kontakt oss for tilbud</p>
                   <Link href="/kontakt-oss" className="block w-full bg-brand-orange text-brand-white font-bold px-6 py-3 rounded-[10px] hover:opacity-90 transition-opacity text-center">
                     Kontakt oss
                   </Link>
+                </div>
+                <div className="bg-brand-white rounded-[30px] p-6 border border-brand-gray flex flex-col items-center text-center">
+                  <Image src="/images/sentralt-godkjent.png" alt="Sentralt godkjent DiBK tiltaksklasse 1 og 2" width={80} height={80} className="object-contain mb-3" />
+                  <p className="text-brand-darkgray text-xs leading-relaxed">Sentralt godkjent foretak for brannprosjektering i tiltaksklasse 1 og 2</p>
                 </div>
               </ScrollReveal>
             </div>

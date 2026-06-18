@@ -1,8 +1,29 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
 import FAQAccordion from '@/components/FAQAccordion'
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Hjem', item: 'https://www.stavangerbrannkonsult.no' },
+    { '@type': 'ListItem', position: 2, name: 'Brannkonsept', item: 'https://www.stavangerbrannkonsult.no/brannkonsept' },
+  ],
+}
+
+const serviceLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Brannkonsept',
+  description: 'Utarbeidelse av brannkonsept for byggesaker i Stavanger og Rogaland. Sentralt godkjent foretak. Fastpris fra kr 15 000 ekskl. mva.',
+  url: 'https://www.stavangerbrannkonsult.no/brannkonsept',
+  provider: { '@type': 'LocalBusiness', name: 'Stavanger Brannkonsult AS', url: 'https://www.stavangerbrannkonsult.no' },
+  areaServed: ['Stavanger', 'Sandnes', 'Sola', 'Randaberg', 'Rogaland'],
+  offers: { '@type': 'Offer', priceCurrency: 'NOK', price: '15000', priceSpecification: { '@type': 'PriceSpecification', minPrice: '15000', priceCurrency: 'NOK', description: 'Fra kr 15 000 ekskl. mva. for tiltaksklasse 2' } },
+}
 
 export const metadata: Metadata = {
   title: 'Brannkonsept Stavanger | Stavanger Brannkonsult',
@@ -32,6 +53,8 @@ const faqItems = [
 export default function BrannkonseptPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }} />
       {/* Page header — left orange border */}
       <section className="py-20 lg:py-28 bg-brand-white border-b border-brand-gray">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -104,7 +127,7 @@ export default function BrannkonseptPage() {
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <ScrollReveal delay={100} className="sticky top-28">
+              <ScrollReveal delay={100} className="sticky top-28 space-y-6">
                 <div className="bg-brand-dark rounded-[30px] p-8 text-brand-white">
                   <h3 className="font-black text-xl mb-4">Få et uforpliktende tilbud</h3>
                   <p className="text-brand-white/60 text-sm leading-relaxed mb-6">
@@ -127,6 +150,10 @@ export default function BrannkonseptPage() {
                       <span className="text-brand-white/70">Levering 5–10 virkedager</span>
                     </div>
                   </div>
+                </div>
+                <div className="bg-brand-white rounded-[30px] p-6 border border-brand-gray flex flex-col items-center text-center">
+                  <Image src="/images/sentralt-godkjent.png" alt="Sentralt godkjent DiBK tiltaksklasse 1 og 2" width={80} height={80} className="object-contain mb-3" />
+                  <p className="text-brand-darkgray text-xs leading-relaxed">Sentralt godkjent foretak for brannprosjektering i tiltaksklasse 1 og 2</p>
                 </div>
               </ScrollReveal>
             </div>

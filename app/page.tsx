@@ -116,7 +116,7 @@ export default function HomePage() {
               </h1>
               <div className="hero-3 w-16 h-1 bg-brand-orange mb-6" />
               <p className="hero-4 text-brand-white/70 text-lg leading-relaxed mb-8">
-                Vi hjelper deg med brannkonsept, brannprosjektering og branntilsyn i Stavanger og Rogaland. Sentralt godkjent. Fastpris.
+                Vi hjelper deg med brannkonsept, brannprosjektering og branninspeksjon i Stavanger og Rogaland. Sentralt godkjent. Fastpris.
               </p>
               <div className="hero-5 flex flex-col sm:flex-row gap-4">
                 <Link href="/kontakt-oss" className="bg-brand-orange text-brand-white font-bold px-8 py-4 rounded-[10px] hover:opacity-90 transition-opacity text-center">

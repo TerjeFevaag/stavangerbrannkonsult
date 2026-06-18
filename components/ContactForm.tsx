@@ -29,6 +29,10 @@ export default function ContactForm() {
         </select>
       </div>
       <div>
+        <label htmlFor="adresse" className="block text-sm font-bold text-brand-black mb-1.5">Prosjektadresse</label>
+        <input type="text" id="adresse" name="adresse" className="w-full px-4 py-3 border border-brand-gray rounded-[10px] text-brand-black placeholder:text-brand-darkgray focus:outline-none focus:border-brand-orange transition-colors" placeholder="Gateadresse, postnummer, sted" />
+      </div>
+      <div>
         <label htmlFor="melding" className="block text-sm font-bold text-brand-black mb-1.5">Melding *</label>
         <textarea id="melding" name="melding" required rows={5} className="w-full px-4 py-3 border border-brand-gray rounded-[10px] text-brand-black placeholder:text-brand-darkgray focus:outline-none focus:border-brand-orange transition-colors resize-none" placeholder="Beskriv prosjektet ditt kort..." />
       </div>
