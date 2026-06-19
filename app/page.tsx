@@ -96,15 +96,11 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-stretch overflow-hidden">
         {/* Left: city image with diagonal clip */}
         <div className="absolute inset-0">
-          <Image
-            src="/images/hero.jpg"
-            alt="Stavanger by"
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
+          <img
+            src="/images/hero.svg"
+            alt="Stavanger by — silhuett av Gamle Stavanger, domkirken og Vågen havn"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-brand-black/50" />
         </div>
         {/* Right panel — dark overlay + content */}
         <div className="relative z-10 w-full max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center min-h-screen py-32">
