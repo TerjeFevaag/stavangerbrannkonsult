@@ -39,8 +39,8 @@ export default function KontaktOssPage() {
                 <h2 className="text-brand-white text-2xl font-black mb-8">Kontaktinformasjon</h2>
                 <div className="space-y-6">
                   {[
-                    { Icon: Phone, label: 'Telefon', value: '+47 000 00 000', href: 'tel:+4700000000' },
-                    { Icon: Mail, label: 'E-post', value: 'post@stavangerbrannkonsult.no', href: 'mailto:post@stavangerbrannkonsult.no' },
+                    { Icon: Phone, label: 'Telefon', value: '+47 456 01 942', href: 'tel:+4745601942' },
+                    { Icon: Mail, label: 'E-post', value: 'post@brannkonsult.no', href: 'mailto:post@brannkonsult.no' },
                   ].map(({ Icon, label, value, href }) => (
                     <div key={label} className="flex items-start gap-4">
                       <div className="w-10 h-10 rounded-full bg-brand-orange/20 flex items-center justify-center shrink-0">
@@ -58,8 +58,8 @@ export default function KontaktOssPage() {
                     </div>
                     <div>
                       <p className="text-brand-white/50 text-sm mb-1">Adresse</p>
-                      <p className="text-brand-white font-bold">Gateadresse</p>
-                      <p className="text-brand-white/60">Stavanger</p>
+                      <p className="text-brand-white font-bold">Haakon VII&apos;s gate 6</p>
+                      <p className="text-brand-white/60">0161 Oslo</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">

@@ -39,17 +39,15 @@ const localBusinessLd = {
   '@type': 'LocalBusiness',
   name: 'Stavanger Brannkonsult AS',
   description: 'Brannprosjektering, brannkonsept og branninspeksjon i Stavanger og Rogaland. Sentralt godkjent foretak i tiltaksklasse 1 og 2.',
-  // TODO: Erstatt med ekte telefonnummer
-  telephone: 'TODO_TELEFONNUMMER',
-  email: 'post@stavangerbrannkonsult.no',
+  telephone: '+4745601942',
+  email: 'post@brannkonsult.no',
   foundingDate: '2013',
   address: {
     '@type': 'PostalAddress',
-    // TODO: Fyll inn gateadresse og postnummer
-    streetAddress: 'TODO_GATEADRESSE',
-    postalCode: 'TODO_POSTNUMMER',
-    addressLocality: 'Stavanger',
-    addressRegion: 'Rogaland',
+    streetAddress: "Haakon VII's gate 6",
+    postalCode: '0161',
+    addressLocality: 'Oslo',
+    addressRegion: 'Oslo',
     addressCountry: 'NO',
   },
   url: 'https://www.stavangerbrannkonsult.no',

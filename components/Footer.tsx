@@ -20,9 +20,10 @@ export default function Footer() {
           {/* Col 1 */}
           <div>
             <Image src="/images/logo-white.png" alt="Stavanger Brannkonsult" width={234} height={72} className="object-contain mb-5" />
-            <p className="text-brand-white/60 text-sm leading-relaxed mb-5">
+            <p className="text-brand-white/60 text-sm leading-relaxed mb-3">
               Brannprosjektering i Stavanger og Rogaland. Sentralt godkjent foretak for tiltaksklasse 1 og 2.
             </p>
+            <p className="text-brand-white/40 text-xs mb-5">Stavanger, Rogaland</p>
             <div className="flex gap-4">
               <a href="#" aria-label="Facebook" className="text-brand-white/60 hover:text-brand-orange transition-colors"><FacebookIcon /></a>
               <a href="#" aria-label="Instagram" className="text-brand-white/60 hover:text-brand-orange transition-colors"><InstagramIcon /></a>
@@ -52,11 +53,11 @@ export default function Footer() {
         {/* Contact strip */}
         <div className="mt-12 border-t border-brand-orange/20 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex flex-col sm:flex-row gap-5 text-sm text-brand-white/70">
-            <a href="tel:+4700000000" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
-              <Phone size={14} /> +47 000 00 000
+            <a href="tel:+4745601942" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
+              <Phone size={14} /> +47 456 01 942
             </a>
-            <a href="mailto:post@stavangerbrannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
-              <Mail size={14} /> post@stavangerbrannkonsult.no
+            <a href="mailto:post@brannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
+              <Mail size={14} /> post@brannkonsult.no
             </a>
           </div>
           <Link href="/kontakt-oss" className="shrink-0 bg-brand-orange text-brand-white font-bold px-7 py-2.5 rounded-[10px] text-sm hover:opacity-90 transition-opacity">

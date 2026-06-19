@@ -33,11 +33,11 @@ export default function TopBar() {
         <div className="flex items-center gap-6">
           <a href="tel:+4700000000" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
             <Phone size={14} />
-            <span>+47 000 00 000</span>
+            <span>+47 456 01 942</span>
           </a>
-          <a href="mailto:post@stavangerbrannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors hidden sm:flex">
+          <a href="mailto:post@brannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors hidden sm:flex">
             <Mail size={14} />
-            <span>post@stavangerbrannkonsult.no</span>
+            <span>post@brannkonsult.no</span>
           </a>
         </div>
         <div className="flex items-center gap-4">
