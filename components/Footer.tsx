@@ -56,8 +56,8 @@ export default function Footer() {
             <a href="tel:+4745601942" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
               <Phone size={14} /> +47 456 01 942
             </a>
-            <a href="mailto:post@brannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
-              <Mail size={14} /> post@brannkonsult.no
+            <a href="mailto:post@stavangerbrannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
+              <Mail size={14} /> post@stavangerbrannkonsult.no
             </a>
           </div>
           <Link href="/kontakt-oss" className="shrink-0 bg-brand-orange text-brand-white font-bold px-7 py-2.5 rounded-[10px] text-sm hover:opacity-90 transition-opacity">

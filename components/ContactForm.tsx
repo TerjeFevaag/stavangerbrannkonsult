@@ -1,8 +1,40 @@
 'use client'
 
+import { useState } from 'react'
+
+type Status = 'idle' | 'sending' | 'success' | 'error'
+
 export default function ContactForm() {
+  const [status, setStatus] = useState<Status>('idle')
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setStatus('sending')
+    const data = Object.fromEntries(new FormData(e.currentTarget))
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+    setStatus(res.ok ? 'success' : 'error')
+  }
+
+  if (status === 'success') {
+    return (
+      <div className="text-center py-12">
+        <div className="w-16 h-16 bg-brand-orange/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#E8601C" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <h3 className="text-brand-black font-black text-xl mb-2">Takk for henvendelsen!</h3>
+        <p className="text-brand-darkgray">Vi svarer deg innen 24 timer.</p>
+      </div>
+    )
+  }
+
   return (
-    <form action="#" method="POST" className="space-y-5">
+    <form onSubmit={handleSubmit} className="space-y-5">
       <div>
         <label htmlFor="navn" className="block text-sm font-bold text-brand-black mb-1.5">Navn *</label>
         <input type="text" id="navn" name="navn" required className="w-full px-4 py-3 border border-brand-gray rounded-[10px] text-brand-black placeholder:text-brand-darkgray focus:outline-none focus:border-brand-orange transition-colors" placeholder="Ditt fulle navn" />
@@ -36,8 +68,17 @@ export default function ContactForm() {
         <label htmlFor="melding" className="block text-sm font-bold text-brand-black mb-1.5">Melding *</label>
         <textarea id="melding" name="melding" required rows={5} className="w-full px-4 py-3 border border-brand-gray rounded-[10px] text-brand-black placeholder:text-brand-darkgray focus:outline-none focus:border-brand-orange transition-colors resize-none" placeholder="Beskriv prosjektet ditt kort..." />
       </div>
-      <button type="submit" className="w-full bg-brand-orange text-brand-white font-bold px-8 py-4 rounded-[10px] hover:opacity-90 transition-opacity text-base">
-        Send forespørsel
+      {status === 'error' && (
+        <p className="text-sm text-red-600 bg-red-50 px-4 py-3 rounded-[10px]">
+          Noe gikk galt. Prøv igjen eller send e-post direkte til post@stavangerbrannkonsult.no
+        </p>
+      )}
+      <button
+        type="submit"
+        disabled={status === 'sending'}
+        className="w-full bg-brand-orange text-brand-white font-bold px-8 py-4 rounded-[10px] hover:opacity-90 transition-opacity text-base disabled:opacity-60"
+      >
+        {status === 'sending' ? 'Sender...' : 'Send forespørsel'}
       </button>
     </form>
   )

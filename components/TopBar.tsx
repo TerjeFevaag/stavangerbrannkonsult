@@ -35,9 +35,9 @@ export default function TopBar() {
             <Phone size={14} />
             <span>+47 456 01 942</span>
           </a>
-          <a href="mailto:post@brannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors hidden sm:flex">
+          <a href="mailto:post@stavangerbrannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors hidden sm:flex">
             <Mail size={14} />
-            <span>post@brannkonsult.no</span>
+            <span>post@stavangerbrannkonsult.no</span>
           </a>
         </div>
         <div className="flex items-center gap-4">

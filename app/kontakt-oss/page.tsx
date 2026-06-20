@@ -40,7 +40,7 @@ export default function KontaktOssPage() {
                 <div className="space-y-6">
                   {[
                     { Icon: Phone, label: 'Telefon', value: '+47 456 01 942', href: 'tel:+4745601942' },
-                    { Icon: Mail, label: 'E-post', value: 'post@brannkonsult.no', href: 'mailto:post@brannkonsult.no' },
+                    { Icon: Mail, label: 'E-post', value: 'post@stavangerbrannkonsult.no', href: 'mailto:post@stavangerbrannkonsult.no' },
                   ].map(({ Icon, label, value, href }) => (
                     <div key={label} className="flex items-start gap-4">
                       <div className="w-10 h-10 rounded-full bg-brand-orange/20 flex items-center justify-center shrink-0">
