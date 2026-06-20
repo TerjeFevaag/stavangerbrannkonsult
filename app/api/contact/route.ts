@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `Bearer ${process.env.MAILERSEND_API_KEY}`,
+      Authorization: `Bearer ${process.env.MAILERSEND_TOKEN}`,
     },
     body: JSON.stringify({
       from: { email: 'noreply@stavangerbrannkonsult.no', name: 'Stavanger Brannkonsult' },
