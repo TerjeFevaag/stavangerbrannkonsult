@@ -50,7 +50,7 @@ export default function Navbar() {
           </a>
           <Link href="/kontakt-oss"
             className="ml-1 bg-brand-orange text-brand-white font-bold px-5 py-2.5 rounded-[10px] hover:opacity-90 transition-opacity text-sm">
-            Fa tilbud
+            Få tilbud
           </Link>
         </nav>
         <button onClick={() => setOpen(!open)} className={`lg:hidden p-2 ${scrolled ? 'text-brand-black' : 'text-brand-white'}`} aria-label="Meny">
@@ -71,7 +71,7 @@ export default function Navbar() {
             </a>
             <Link href="/kontakt-oss" onClick={() => setOpen(false)}
               className="block bg-brand-orange text-brand-white font-bold px-5 py-3 rounded-[10px] text-center hover:opacity-90">
-              Fa tilbud
+              Få tilbud
             </Link>
           </div>
         </div>

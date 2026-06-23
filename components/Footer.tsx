@@ -61,7 +61,7 @@ export default function Footer() {
             </a>
           </div>
           <Link href="/kontakt-oss" className="shrink-0 bg-brand-orange text-brand-white font-bold px-7 py-2.5 rounded-[10px] text-sm hover:opacity-90 transition-opacity">
-            Fa gratis tilbud
+            Få gratis tilbud
           </Link>
         </div>
 
