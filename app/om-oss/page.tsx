@@ -17,9 +17,9 @@ export default function OmOssPage() {
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="border-l-4 border-brand-orange pl-8">
             <p className="text-brand-orange font-bold text-sm uppercase tracking-widest mb-3">Om oss</p>
-            <h1 className="text-brand-black font-black text-4xl lg:text-6xl leading-tight mb-5">Stavanger Brannkonsult</h1>
+            <h1 className="text-brand-black font-black text-4xl lg:text-6xl leading-tight mb-5">Din brannrådgiver i Stavanger og Rogaland</h1>
             <p className="text-brand-darkgray text-lg lg:text-xl max-w-2xl leading-relaxed">
-              Sentralt godkjent brannprosjekteringsfirma med over ti års erfaring. Vi hjelper kunder i Stavanger, Rogaland og hele landet.
+              Sentralt godkjent foretak med over ti års erfaring. Over 1 200 prosjekter gjennomført — alltid med fastpris og nøytral rådgivning.
             </p>
           </div>
         </div>
