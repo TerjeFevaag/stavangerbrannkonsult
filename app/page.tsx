@@ -110,13 +110,13 @@ export default function HomePage() {
         <div className="relative z-10 w-full max-w-[1350px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center min-h-screen py-32">
           <div className="lg:w-1/2 lg:ml-auto">
             <div className="bg-brand-dark/90 backdrop-blur-sm rounded-[30px] p-10 lg:p-14">
-              <p className="hero-1 font-accent text-brand-orange text-xl mb-4">Stavanger Brannkonsult</p>
+              <p className="hero-1 font-accent text-brand-orange text-xl mb-4">Fastpris · Sentralt godkjent · Svar innen 24t</p>
               <h1 className="hero-2 text-brand-white font-black text-4xl lg:text-5xl xl:text-6xl leading-tight mb-6">
-                Brann&shy;prosjektering i Stavanger
+                Brann&shy;prosjektering uten overraskelser
               </h1>
               <div className="hero-3 w-16 h-1 bg-brand-orange mb-6" />
               <p className="hero-4 text-brand-white/70 text-lg leading-relaxed mb-8">
-                Vi hjelper deg med brannkonsept, brannprosjektering og branninspeksjon i Stavanger og Rogaland. Sentralt godkjent. Fastpris.
+                Vi leverer brannkonsept, brannprosjektering og uavhengig kontroll i Stavanger og Rogaland. Alltid fastpris — aldri skjulte kostnader.
               </p>
               <div className="hero-5 flex flex-col sm:flex-row gap-4">
                 <Link href="/kontakt-oss" className="bg-brand-orange text-brand-white font-bold px-8 py-4 rounded-[10px] hover:opacity-90 transition-opacity text-center">
