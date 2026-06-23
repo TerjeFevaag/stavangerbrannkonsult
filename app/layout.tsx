@@ -39,7 +39,7 @@ const localBusinessLd = {
   '@type': 'LocalBusiness',
   name: 'Stavanger Brannkonsult AS',
   description: 'Brannprosjektering, brannkonsept og branninspeksjon i Stavanger og Rogaland. Sentralt godkjent foretak i tiltaksklasse 1 og 2.',
-  telephone: '+4745601942',
+  telephone: '+4745411440',
   email: 'post@stavangerbrannkonsult.no',
   foundingDate: '2013',
   address: {

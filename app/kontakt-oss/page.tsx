@@ -39,7 +39,7 @@ export default function KontaktOssPage() {
                 <h2 className="text-brand-white text-2xl font-black mb-8">Kontaktinformasjon</h2>
                 <div className="space-y-6">
                   {[
-                    { Icon: Phone, label: 'Telefon', value: '+47 456 01 942', href: 'tel:+4745601942' },
+                    { Icon: Phone, label: 'Telefon', value: '+47 454 11 440', href: 'tel:+4745411440' },
                     { Icon: Mail, label: 'E-post', value: 'post@stavangerbrannkonsult.no', href: 'mailto:post@stavangerbrannkonsult.no' },
                   ].map(({ Icon, label, value, href }) => (
                     <div key={label} className="flex items-start gap-4">

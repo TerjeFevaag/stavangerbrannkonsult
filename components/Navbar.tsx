@@ -43,10 +43,10 @@ export default function Navbar() {
             </Link>
           ))}
           <div className={`h-4 w-px mx-1 ${scrolled ? 'bg-brand-gray' : 'bg-brand-white/20'}`} />
-          <a href="tel:+4745601942"
+          <a href="tel:+4745411440"
             className={`flex items-center gap-1.5 text-sm font-bold transition-colors hover:text-brand-orange ${scrolled ? 'text-brand-black' : 'text-brand-white/80'}`}>
             <Phone size={13} />
-            +47 456 01 942
+            +47 454 11 440
           </a>
           <Link href="/kontakt-oss"
             className="ml-1 bg-brand-orange text-brand-white font-bold px-5 py-2.5 rounded-[10px] hover:opacity-90 transition-opacity text-sm">
@@ -66,8 +66,8 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="pt-4 pb-1 flex flex-col gap-3">
-            <a href="tel:+4745601942" className="flex items-center gap-2 text-brand-white/70 text-sm font-bold">
-              <Phone size={13} /> +47 456 01 942
+            <a href="tel:+4745411440" className="flex items-center gap-2 text-brand-white/70 text-sm font-bold">
+              <Phone size={13} /> +47 454 11 440
             </a>
             <Link href="/kontakt-oss" onClick={() => setOpen(false)}
               className="block bg-brand-orange text-brand-white font-bold px-5 py-3 rounded-[10px] text-center hover:opacity-90">
