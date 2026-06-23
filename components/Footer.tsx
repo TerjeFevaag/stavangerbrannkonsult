@@ -53,8 +53,8 @@ export default function Footer() {
         {/* Contact strip */}
         <div className="mt-12 border-t border-brand-orange/20 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex flex-col sm:flex-row gap-5 text-sm text-brand-white/70">
-            <a href="tel:+4745411440" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
-              <Phone size={14} /> +47 454 11 440
+            <a href="tel:+4797349273" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
+              <Phone size={14} /> +47 973 49 273
             </a>
             <a href="mailto:post@stavangerbrannkonsult.no" className="flex items-center gap-2 hover:text-brand-orange transition-colors">
               <Mail size={14} /> post@stavangerbrannkonsult.no
