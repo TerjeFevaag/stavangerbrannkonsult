@@ -5,8 +5,8 @@ import { CheckCircle } from 'lucide-react'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Om oss | Stavanger Brannkonsult',
-  description: 'Stavanger Brannkonsult er et sentralt godkjent brannprosjekteringsfirma med over ti års erfaring i Stavanger og Rogaland.',
+  title: 'Om oss | Brannkonsult AS',
+  description: 'Brannkonsult AS er et sentralt godkjent brannprosjekteringsfirma med over ti års erfaring i Stavanger og Rogaland.',
   alternates: { canonical: 'https://www.stavangerbrannkonsult.no/om-oss' },
 }
 

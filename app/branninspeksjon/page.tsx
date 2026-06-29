@@ -25,7 +25,7 @@ const serviceLd = {
 }
 
 export const metadata: Metadata = {
-  title: 'Branninspeksjon Stavanger | Stavanger Brannkonsult',
+  title: 'Branninspeksjon Stavanger | Brannkonsult AS',
   description: 'Hjelp etter branntilsyn i Stavanger og Rogaland. Tilstandsrapport og handlingsplan. Sentralt godkjent foretak.',
   alternates: { canonical: 'https://www.stavangerbrannkonsult.no/branninspeksjon' },
 }

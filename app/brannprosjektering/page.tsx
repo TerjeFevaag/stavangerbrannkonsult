@@ -26,7 +26,7 @@ const serviceLd = {
 }
 
 export const metadata: Metadata = {
-  title: 'Brannprosjektering Stavanger | Stavanger Brannkonsult',
+  title: 'Brannprosjektering Stavanger | Brannkonsult AS',
   description: 'Brannprosjektering i Stavanger og Rogaland. Sentralt godkjent foretak med fastpris. Vi hjelper deg med alle typer byggesaker.',
   alternates: { canonical: 'https://www.stavangerbrannkonsult.no/brannprosjektering' },
 }

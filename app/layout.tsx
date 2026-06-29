@@ -20,12 +20,12 @@ const dancing = Dancing_Script({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.stavangerbrannkonsult.no'),
-  title: 'Brannprosjektering i Stavanger | Stavanger Brannkonsult',
-  description: 'Stavanger Brannkonsult tilbyr brannkonsept, brannprosjektering og branninspeksjon i Stavanger og Rogaland. Sentralt godkjent foretak. Fastpris.',
+  title: 'Brannprosjektering i Stavanger | Brannkonsult AS',
+  description: 'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branninspeksjon i Stavanger og Rogaland. Sentralt godkjent foretak. Fastpris.',
   alternates: { canonical: 'https://www.stavangerbrannkonsult.no' },
   openGraph: {
-    title: 'Brannprosjektering i Stavanger | Stavanger Brannkonsult',
-    description: 'Stavanger Brannkonsult tilbyr brannkonsept, brannprosjektering og branntilsyn i Stavanger og Rogaland.',
+    title: 'Brannprosjektering i Stavanger | Brannkonsult AS',
+    description: 'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branntilsyn i Stavanger og Rogaland.',
     url: 'https://www.stavangerbrannkonsult.no',
     siteName: 'Stavanger Brannkonsult',
     locale: 'nb_NO',

@@ -26,7 +26,7 @@ const serviceLd = {
 }
 
 export const metadata: Metadata = {
-  title: 'Uavhengig kontroll brann Stavanger | Stavanger Brannkonsult',
+  title: 'Uavhengig kontroll brann Stavanger | Brannkonsult AS',
   description: 'Uavhengig kontroll av brannkonsept i Stavanger og Rogaland. Sentralt godkjent foretak. Fastpris.',
   alternates: { canonical: 'https://www.stavangerbrannkonsult.no/uavhengig-kontroll' },
 }

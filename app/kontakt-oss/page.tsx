@@ -4,8 +4,8 @@ import ScrollReveal from '@/components/ScrollReveal'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Kontakt oss | Stavanger Brannkonsult',
-  description: 'Kontakt Stavanger Brannkonsult for brannprosjektering og brannkonsept. Vi svarer innen 24 timer. Gratis og uforpliktende tilbud.',
+  title: 'Kontakt oss | Brannkonsult AS',
+  description: 'Ta kontakt for brannprosjektering og brannkonsept. Vi svarer innen 24 timer. Gratis og uforpliktende tilbud.',
   alternates: { canonical: 'https://www.stavangerbrannkonsult.no/kontakt-oss' },
 }
 

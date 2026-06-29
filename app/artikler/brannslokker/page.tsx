@@ -4,7 +4,7 @@ import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Har du riktig brannslokkeapparat? | Stavanger Brannkonsult',
+  title: 'Har du riktig brannslokkeapparat? | Brannkonsult AS',
   description: 'Vet du hvilken type brannslokker du trenger? Vi gjennomgår krav og forskjellen mellom pulver- og skumapparater.',
   alternates: { canonical: 'https://www.stavangerbrannkonsult.no/artikler/brannslokker' },
 }

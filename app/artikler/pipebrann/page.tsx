@@ -4,7 +4,7 @@ import Link from 'next/link'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Forebygg pipebrann med enkle grep | Stavanger Brannkonsult',
+  title: 'Forebygg pipebrann med enkle grep | Brannkonsult AS',
   description: 'Er du i faresonen for pipebrann? Vi forklarer hva som forårsaker den og hva du kan gjøre for å forebygge den.',
   alternates: { canonical: 'https://www.stavangerbrannkonsult.no/artikler/pipebrann' },
 }
