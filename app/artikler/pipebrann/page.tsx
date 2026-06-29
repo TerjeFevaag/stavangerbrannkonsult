@@ -30,7 +30,7 @@ export default function PipebrannPage() {
           </ScrollReveal>
           <ScrollReveal>
             <p className="text-brand-darkgray text-lg leading-relaxed mb-8">
-              En pipebrann er en av de vanligste brannårsakene i norske boliger. Heldigvis er den i stor grad forebyggbart med enkle tiltak.
+              En pipebrann er en av de vanligste brannårsakene i norske boliger. Heldigvis er den i stor grad forebyggbar med enkle tiltak.
             </p>
           </ScrollReveal>
           <ScrollReveal>
