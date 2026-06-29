@@ -19,16 +19,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-0">
           {/* Col 1 */}
           <div>
-            <Image src="/images/logo-white.png" alt="Stavanger Brannkonsult" width={234} height={72} className="object-contain mb-5" />
+            <Image src="/images/logo-white.png" alt="Brannkonsult AS" width={234} height={72} className="object-contain mb-5" />
             <p className="text-brand-white/60 text-sm leading-relaxed mb-3">
               Brannprosjektering i Stavanger og Rogaland. Sentralt godkjent foretak for tiltaksklasse 1 og 2.
             </p>
             <p className="text-brand-white/40 text-xs mb-5">Stavanger, Rogaland</p>
-            <div className="flex gap-4">
-              <a href="#" aria-label="Facebook" className="text-brand-white/60 hover:text-brand-orange transition-colors"><FacebookIcon /></a>
-              <a href="#" aria-label="Instagram" className="text-brand-white/60 hover:text-brand-orange transition-colors"><InstagramIcon /></a>
-              <a href="#" aria-label="LinkedIn" className="text-brand-white/60 hover:text-brand-orange transition-colors"><LinkedinIcon /></a>
-            </div>
           </div>
           {/* Col 2 */}
           <div>

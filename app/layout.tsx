@@ -27,17 +27,17 @@ export const metadata: Metadata = {
     title: 'Brannprosjektering i Stavanger | Brannkonsult AS',
     description: 'Brannkonsult AS tilbyr brannkonsept, brannprosjektering og branntilsyn i Stavanger og Rogaland.',
     url: 'https://www.stavangerbrannkonsult.no',
-    siteName: 'Stavanger Brannkonsult',
+    siteName: 'Brannkonsult AS',
     locale: 'nb_NO',
     type: 'website',
-    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Stavanger Brannkonsult' }],
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'Brannkonsult AS – brannprosjektering i Stavanger' }],
   },
 }
 
 const localBusinessLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'Stavanger Brannkonsult AS',
+  name: 'Brannkonsult AS',
   description: 'Brannprosjektering, brannkonsept og branninspeksjon i Stavanger og Rogaland. Sentralt godkjent foretak i tiltaksklasse 1 og 2.',
   telephone: '+4797349273',
   email: 'post@stavangerbrannkonsult.no',
@@ -67,18 +67,13 @@ const localBusinessLd = {
     { '@type': 'City', name: 'Randaberg' },
     { '@type': 'AdministrativeArea', name: 'Rogaland' },
   ],
-  // TODO: Legg inn ekte URL-er til Facebook/LinkedIn/Instagram når disse er klare
-  sameAs: [
-    'TODO_FACEBOOK_URL',
-    'TODO_INSTAGRAM_URL',
-    'TODO_LINKEDIN_URL',
-  ],
+  sameAs: [],
 }
 
 const websiteLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Stavanger Brannkonsult',
+  name: 'Brannkonsult AS',
   url: 'https://www.stavangerbrannkonsult.no',
 }
 

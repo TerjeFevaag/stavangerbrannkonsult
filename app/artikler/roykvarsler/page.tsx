@@ -83,7 +83,7 @@ export default function RoykVarslerPage() {
           <ScrollReveal>
             <div className="bg-brand-lightgray rounded-[20px] p-8">
               <h2 className="text-brand-black text-xl font-black mb-3">Spørsmål om brannsikkerhet?</h2>
-              <p className="text-brand-darkgray leading-relaxed mb-5">Stavanger Brannkonsult hjelper deg med brannkonsept og brannsikkerhetsvurderinger.</p>
+              <p className="text-brand-darkgray leading-relaxed mb-5">Brannkonsult AS hjelper deg med brannkonsept og brannsikkerhetsvurderinger i Stavanger og Rogaland.</p>
               <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-8 py-3 rounded-[10px] hover:opacity-90 transition-opacity">Kontakt oss</Link>
             </div>
           </ScrollReveal>

@@ -40,11 +40,7 @@ export default function TopBar() {
             <span>post@stavangerbrannkonsult.no</span>
           </a>
         </div>
-        <div className="flex items-center gap-4">
-          <a href="#" aria-label="Facebook" className="hover:text-brand-orange transition-colors"><FacebookIcon /></a>
-          <a href="#" aria-label="Instagram" className="hover:text-brand-orange transition-colors"><InstagramIcon /></a>
-          <a href="#" aria-label="LinkedIn" className="hover:text-brand-orange transition-colors"><LinkedinIcon /></a>
-        </div>
+        <div className="flex items-center gap-4" />
       </div>
     </div>
   )

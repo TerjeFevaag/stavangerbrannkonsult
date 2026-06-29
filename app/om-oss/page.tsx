@@ -48,7 +48,7 @@ export default function OmOssPage() {
             </ScrollReveal>
             <ScrollReveal variant="scale" delay={100}>
               <div className="relative rounded-[30px] overflow-hidden h-80 lg:h-96">
-                <Image src="/images/Om-oss.jpg" alt="Stavanger Brannkonsult team" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+                <Image src="/images/Om-oss.jpg" alt="Brannkonsult AS team" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
               </div>
             </ScrollReveal>
           </div>

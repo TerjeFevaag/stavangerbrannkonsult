@@ -42,7 +42,7 @@ export default function PipebrannPage() {
           <ScrollReveal>
             <h2 className="text-brand-black text-2xl font-black mb-4">Hva forårsaker pipebrann?</h2>
             <ul className="list-none space-y-3 mb-8">
-              {['Fuktig eller usesongert ved', 'For lav temperatur i ovnen', 'Brenning av avfall eller trykt papir', 'For sjelden feiing', 'Dårlig trekk i pipa'].map((item, i) => (
+              {['Fuktig eller ikke-sesongert ved', 'For lav temperatur i ovnen', 'Brenning av avfall eller trykt papir', 'For sjelden feiing', 'Dårlig trekk i pipa'].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <span className="w-2 h-2 rounded-full bg-brand-orange mt-2 shrink-0" />
                   <span className="text-brand-darkgray">{item}</span>
@@ -70,7 +70,7 @@ export default function PipebrannPage() {
           <ScrollReveal>
             <div className="bg-brand-lightgray rounded-[20px] p-8">
               <h2 className="text-brand-black text-xl font-black mb-3">Trenger du hjelp med brannsikkerhet?</h2>
-              <p className="text-brand-darkgray leading-relaxed mb-5">Stavanger Brannkonsult hjelper privatpersoner og utbyggere med brannprosjektering i Stavanger og Rogaland.</p>
+              <p className="text-brand-darkgray leading-relaxed mb-5">Brannkonsult AS hjelper privatpersoner og utbyggere med brannprosjektering i Stavanger og Rogaland.</p>
               <Link href="/kontakt-oss" className="inline-block bg-brand-orange text-brand-white font-bold px-8 py-3 rounded-[10px] hover:opacity-90 transition-opacity">Kontakt oss</Link>
             </div>
           </ScrollReveal>
