@@ -26,8 +26,8 @@ const serviceLd = {
 }
 
 export const metadata: Metadata = {
-  title: 'Brannkonsept Stavanger | Brannkonsult AS',
-  description: 'Vi utarbeider brannkonsept for byggesaker i Stavanger og Rogaland. Sentralt godkjent foretak med fastpris.',
+  title: 'Brannkonsept Stavanger – Sentralt godkjent | Brannkonsult AS',
+  description: 'Trenger du brannkonsept til byggesøknaden? Vi leverer for tilbygg, nybygg og bruksendring i Stavanger, Sandnes og Rogaland. Fastpris fra kr 15 000. Svar innen 24 timer.',
   alternates: { canonical: 'https://www.stavangerbrannkonsult.no/brannkonsept' },
 }
 

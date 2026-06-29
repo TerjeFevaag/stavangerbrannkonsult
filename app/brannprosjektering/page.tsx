@@ -26,8 +26,8 @@ const serviceLd = {
 }
 
 export const metadata: Metadata = {
-  title: 'Brannprosjektering Stavanger | Brannkonsult AS',
-  description: 'Brannprosjektering i Stavanger og Rogaland. Sentralt godkjent foretak med fastpris. Vi hjelper deg med alle typer byggesaker.',
+  title: 'Brannprosjektering Stavanger – Fastpris | Brannkonsult AS',
+  description: 'Sentralt godkjent brannprosjektering for tilbygg, nybygg og bruksendring i Stavanger, Sandnes og Rogaland. Fastpris fra kr 15 000 ekskl. mva. Levering 5–10 virkedager.',
   alternates: { canonical: 'https://www.stavangerbrannkonsult.no/brannprosjektering' },
 }
 

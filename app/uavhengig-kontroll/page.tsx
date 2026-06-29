@@ -26,8 +26,8 @@ const serviceLd = {
 }
 
 export const metadata: Metadata = {
-  title: 'Uavhengig kontroll brann Stavanger | Brannkonsult AS',
-  description: 'Uavhengig kontroll av brannkonsept i Stavanger og Rogaland. Sentralt godkjent foretak. Fastpris.',
+  title: 'Uavhengig kontroll brann Stavanger – TKL 2 | Brannkonsult AS',
+  description: 'Lovpålagt uavhengig kontroll av brannkonsept i tiltaksklasse 2 og høyere. Vi dekker Stavanger, Sandnes og Rogaland. Sentralt godkjent siden 2013. Fastpris – få tilbud.',
   alternates: { canonical: 'https://www.stavangerbrannkonsult.no/uavhengig-kontroll' },
 }
 
