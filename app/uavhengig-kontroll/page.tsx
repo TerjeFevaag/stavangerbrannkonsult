@@ -77,7 +77,7 @@ export default function UavhengigKontrollPage() {
                   Uavhengig kontroll (UK) av brann er krav i SAK10 for prosjekter der brannprosjekteringen er i tiltaksklasse 2 eller høyere. Kontrollen utføres av et foretak uavhengig av den som utarbeidet brannkonseptet.
                 </p>
                 <p className="text-brand-darkgray leading-relaxed">
-                  Vi er en nøytral part — selger ingen produkter og har ingen tilknytning til leverandører av brannanlegg. En samlet oversikt over <a href="https://www.brannkonsult.no/uavhengig-kontroll/" className="text-brand-orange underline hover:opacity-80">kravene til uavhengig kontroll av brann</a> i norsk byggesakslovgivning finner du på brannkonsult.no.
+                  Vi er en nøytral part — selger ingen produkter og har ingen tilknytning til leverandører av brannanlegg. En samlet oversikt over <a href="https://www.brannkonsult.no/uavhengig-kontroll-brannkonsept/" className="text-brand-orange underline hover:opacity-80">kravene til uavhengig kontroll av brann</a> i norsk byggesakslovgivning finner du på brannkonsult.no.
                 </p>
               </ScrollReveal>
 
