@@ -77,7 +77,7 @@ export default function BranninspeksjonPage() {
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Hva gjør brann- og redningsetaten?</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-4">
-                  Stavanger brann og redning gjennomfører tilsyn med særskilte brannobjekter. Tilsynet er stikkprøvebasert — eier er ansvarlig for å følge opp avvik.
+                  Stavanger brann og redning gjennomfører tilsyn med særskilte brannobjekter. Tilsynet er stikkprøvebasert — eier er ansvarlig for å følge opp avvik. For en bred innføring i <a href="https://www.brannkonsult.no/branninspeksjon/" className="text-brand-orange underline hover:opacity-80">branninspeksjon som faglig disiplin</a>, se brannkonsult.no.
                 </p>
                 <blockquote className="border-l-4 border-brand-orange pl-6 italic text-brand-darkgray bg-brand-white rounded-r-[20px] py-4 pr-6">
                   &ldquo;Eier er ansvarlig for at brannsikkerheten i bygget er tilfredsstillende. Branntekniske avvik skal utbedres innen [dato].&rdquo;

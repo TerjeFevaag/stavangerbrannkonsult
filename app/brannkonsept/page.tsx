@@ -77,7 +77,7 @@ export default function BrannkonseptPage() {
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Hva inkluderer brannkonseptet?</h2>
                 <p className="text-brand-darkgray leading-relaxed mb-5">
-                  Et brannkonsept er et strategidokument for brannsikkerhet i byggeprosjektet. Det tar stilling til bærende prinsipper: risikoklasse, brannklasse, bæreevne ved brann, branncelleinndeling, røykventilasjon, rømning og slokkesystem.
+                  Et brannkonsept er et strategidokument for brannsikkerhet i byggeprosjektet. Det tar stilling til bærende prinsipper: risikoklasse, brannklasse, bæreevne ved brann, branncelleinndeling, røykventilasjon, rømning og slokkesystem. En utfyllende faglig beskrivelse av <a href="https://www.brannkonsult.no/brannkonsept/" className="text-brand-orange underline hover:opacity-80">hva brannkonseptet skal dokumentere</a> finner du på brannkonsult.no.
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {[

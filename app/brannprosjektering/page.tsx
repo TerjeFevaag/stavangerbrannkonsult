@@ -89,6 +89,7 @@ export default function BrannprosjekteringPage() {
 
               <ScrollReveal>
                 <h2 className="text-brand-black text-2xl font-black mb-4">Risikoklasser og brannklasser</h2>
+                <p className="text-brand-darkgray leading-relaxed mb-4">Inndelingen i risikoklasser og brannklasser er grunnlaget for all brannprosjektering. En grundig faglig gjennomgang finner du i <a href="https://www.brannkonsult.no/brannprosjektering/" className="text-brand-orange underline hover:opacity-80">den nasjonale veilederen for brannprosjektering</a> på brannkonsult.no.</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="bg-brand-white rounded-[20px] p-6 border border-brand-gray">
                     <h3 className="font-bold text-brand-black text-lg mb-3">Risikoklasser (RKL 1–6)</h3>
